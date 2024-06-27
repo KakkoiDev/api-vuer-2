@@ -4,7 +4,7 @@ import type { Ref } from "vue";
 import type { RobotState } from "~/types/RobotState";
 
 const search: Ref<string> = ref("");
-const robotState: Ref<RobotState> = ref("has results");
+const robotState: Ref<RobotState> = ref("waiting");
 </script>
 
 <template>
@@ -14,6 +14,7 @@ const robotState: Ref<RobotState> = ref("has results");
     <SearchInput class="mt-3" v-model="search" placeholder="ex: robot" />
     <div class="flex flex-col items-center mt-6">
       <RobotIcon :state="robotState" />
+      <RobotMessage :state="robotState" />
       {{ robotState }}
     </div>
   </section>
