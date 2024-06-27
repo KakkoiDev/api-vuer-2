@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import type { Ref } from "vue";
 
-const year = ref(new Date().getFullYear());
+const year: Ref<number> = ref(new Date().getFullYear());
 </script>
 
 <template>
@@ -15,9 +16,8 @@ const year = ref(new Date().getFullYear());
       KakkoiDev</a
     >
     <span> &copy; {{ year }} | </span>
-    <!-- TODO: update GitHub URL -->
     <a
-      href="https://github.com/RilDev/api-vuer-ui"
+      href="https://github.com/KakkoiDev/api-vuer-2"
       target="_blank"
       rel="noopener"
       class="text-blue-600 hover:text-blue-500 transition flex"
