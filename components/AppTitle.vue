@@ -3,7 +3,7 @@
   <div class="text-center">
     Powered by
     <a
-      href="https://api.publicapis.org/"
+      href="https://publicapis.io/"
       target="_blank"
       rel="noopener"
       class="text-blue-600 hover:text-blue-500 transition"
