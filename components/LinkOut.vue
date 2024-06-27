@@ -8,7 +8,7 @@ defineProps<{
   <NuxtLink
     :to="to"
     target="_blank"
-    class="text-blue-600 hover:text-blue-500 transition"
+    class="flex text-blue-600 hover:text-blue-500 transition"
     ><slot
   /></NuxtLink>
 </template>
