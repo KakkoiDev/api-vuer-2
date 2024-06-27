@@ -1,20 +1,8 @@
 <script setup lang="ts">
-// const props = defineProps<{
-//   placeholder: string;
-//   value: string;
-//   reference: string;
-//   inputRefs: Record<string, HTMLInputElement>;
-//   class: string;
-//   search: string;
-// }>();
-
-// defineEmits<{
-//   clearSearch: [reference: string];
-//   getResults: [value: string];
-//   update: [search: string];
-// }>();
-
-const props = defineProps(["class"]);
+defineProps<{
+  class: string;
+  placeholder: string;
+}>();
 
 const model = defineModel();
 </script>
@@ -25,6 +13,7 @@ const model = defineModel();
       type="text"
       class="rounded-md border-gray-900 px-5 py-3 shadow-sm w-full focus:outline-none placeholder-gray-500"
       v-model="model"
+      :placeholder="placeholder"
     />
     <Icon
       name="mdi:close-thick"
